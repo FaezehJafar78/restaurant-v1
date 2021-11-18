@@ -1,16 +1,15 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import stylesheet from './Carousel.module.css';
 
-export const Carousel = props => {
+export const Carousel = (props) => {
   const [iphonePortraitMatch, setIphonePortraitMatch] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const iphonePortraitMatchNew =
-        window.matchMedia('(max-width: 480px)').matches;
+      const iphonePortraitMatchNew = window.matchMedia('(max-width: 480px)').matches;
       if (iphonePortraitMatchNew !== iphonePortraitMatch) {
         setIphonePortraitMatch(iphonePortraitMatchNew);
       }

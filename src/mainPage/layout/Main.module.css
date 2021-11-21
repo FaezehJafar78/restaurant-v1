@@ -1,3 +1,20 @@
 .main {
     color: red;
 }
+
+.carousel {
+    background-color:#3F3F3F;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselImage {
+    width: 30px;
+    height: 30px;
+}
+
+.carouselRow1 {
+    display: flex;
+    justify-content: space-between;
+}
